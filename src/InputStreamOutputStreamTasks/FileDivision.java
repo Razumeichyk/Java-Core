@@ -1,3 +1,5 @@
+package InputStreamOutputStreamTasks;
+
 import java.io.*;
 
 public class FileDivision {
