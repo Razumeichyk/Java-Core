@@ -23,6 +23,43 @@ public class AdaptationOfSeveralInterfaces {
         IncomeDataAdapter(IncomeData data){
             this.data = data;
         }
+
+//        public String getContactLastName(){
+//            return "Ivanov";
+//        }
+//        public String getContactFirstName(){
+//            return "Ivan";
+//        }
+//        public String getCompany(){
+//            return "JavaRush Ltd.";
+//        }
+//        public String getCountryCode(){
+//            return "UA";
+//        }
+//        public int getCountryPhoneCode(){
+//            return 38;
+//        }
+//        public int getTelephoneNumber(){
+//            return 501234567;
+//        }
+
+        public String getName(){
+            return data.getContactLastName()+", "+data.getContactFirstName(); }
+
+        public String getPhoneNumber() {
+            String s = String.format("%010d", data.getPhoneNumber());
+            return "+" + data.getCountryPhoneCode()
+                    + "(" + s.substring(0, 3)
+                    + ")" + s.substring(3,6)
+                    + "-" + s.substring(6,8)
+                    + "-" + s.substring(8,10);
+        }
+
+        public String getCompanyName(){ return data.getCompany(); }
+
+        public String getCountryName(){
+            return countries.get(data.getCountryCode()) ;
+        }
     }
 
 
