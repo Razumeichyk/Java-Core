@@ -3,7 +3,6 @@ package Adapters.AdapterForScanner;
 import java.io.IOException;
 import java.util.Date;
 import java.text.SimpleDateFormat;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class AdapterForScanner {
