@@ -13,7 +13,9 @@ public class AdaptationCustomerAndContactToRowItem {
     }
 
     public static void main(String[] args) {
-
+        String number = "+38(050)123-45-67";
+        String result = number.replaceAll("\\D", "");
+        System.out.println(result);
     }
 
     public static class DataAdapter implements RowItem{
